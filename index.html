@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A scroll-driven Drake music campaign experience for Iceman Season."
+    />
+    <title>Iceman Season</title>
+    <link rel="preload" href="./assets/iceman-hand.mp4" as="video" type="video/mp4" />
+    <link rel="preload" href="./assets/iceman-cover.jpg" as="image" />
+    <link rel="preload" href="./assets/habibti-cover.jpg" as="image" />
+    <link rel="preload" href="./assets/maid-of-honour-cover.jpg" as="image" />
+    <link rel="preload" href="./assets/crystal-palm.png" as="image" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="experience" aria-label="Iceman Season music experience">
+      <section class="scroll-stage" aria-label="Scroll-driven Iceman showcase">
+        <div class="pin">
+          <div class="grain" aria-hidden="true"></div>
+
+          <video
+            class="hand-video"
+            src="./assets/iceman-hand.mp4"
+            poster="./assets/iceman-cover.jpg"
+            muted
+            playsinline
+            preload="auto"
+            aria-label="Crystal glove hand animation"
+          ></video>
+
+          <section class="hero-copy panel panel-hero" aria-labelledby="hero-title">
+            <p class="eyebrow">OVO / October Drake</p>
+            <h1 id="hero-title">It's Iceman Season. Listen in for some new Drake songs</h1>
+            <p class="meta">Drake <span></span> 3 albums <span></span> 43 songs</p>
+            <button class="primary-cta" type="button" data-scroll-albums aria-label="Play Iceman Season now">
+              <span class="play-mark" aria-hidden="true"></span>
+              Play Now
+            </button>
+          </section>
+
+          <section class="transition-copy panel panel-transition" aria-label="Iceman transition">
+            <p class="eyebrow">Scroll to unlock</p>
+            <div class="thin-line" aria-hidden="true"></div>
+          </section>
+
+          <section id="albums" class="album-showcase panel panel-albums" aria-labelledby="albums-title">
+            <h2 id="albums-title">3 albums, all for you</h2>
+            <div class="album-row" aria-label="Album list">
+              <article class="album-card">
+                <div class="cover cover-iceman">
+                  <img src="./assets/iceman-cover.jpg" alt="ICEMAN album artwork" />
+                </div>
+                <div class="album-info">
+                  <div>
+                    <h3>ICEMAN</h3>
+                    <p>18 songs</p>
+                  </div>
+                  <button class="icon-button" type="button" aria-label="Play ICEMAN">
+                    <span aria-hidden="true"></span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="album-card">
+                <div class="cover cover-habibti">
+                  <img src="./assets/habibti-cover.jpg" alt="HABIBTI album artwork" />
+                </div>
+                <div class="album-info">
+                  <div>
+                    <h3>HABIBTI</h3>
+                    <p>11 songs</p>
+                  </div>
+                  <button class="icon-button" type="button" aria-label="Play HABIBTI">
+                    <span aria-hidden="true"></span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="album-card">
+                <div class="cover cover-maid">
+                  <img src="./assets/maid-of-honour-cover.jpg" alt="MAID OF HONOUR album artwork" />
+                </div>
+                <div class="album-info">
+                  <div>
+                    <h3>MAID OF HONOUR</h3>
+                    <p>14 songs</p>
+                  </div>
+                  <button class="icon-button" type="button" aria-label="Play MAID OF HONOUR">
+                    <span aria-hidden="true"></span>
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <img class="palm-hand" src="./assets/crystal-palm.png" alt="" aria-hidden="true" />
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
