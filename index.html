@@ -10,7 +10,7 @@
     <title>Iceman Season</title>
     <link rel="preload" href="./assets/iceman-hand.mp4" as="video" type="video/mp4" />
     <link rel="preload" href="./assets/iceman-cover.jpg" as="image" />
-    <link rel="preload" href="./assets/habibti-cover.jpg" as="image" />
+    <link rel="preload" href="./assets/habibti-cover.png" as="image" />
     <link rel="preload" href="./assets/maid-of-honour-cover.jpg" as="image" />
     <link rel="preload" href="./assets/crystal-palm.png" as="image" />
     <link rel="stylesheet" href="./styles.css" />
@@ -64,20 +64,23 @@
                 </div>
               </article>
 
-              <article class="album-card">
-                <div class="cover cover-habibti">
-                  <img src="./assets/habibti-cover.jpg" alt="HABIBTI album artwork" />
-                </div>
-                <div class="album-info">
-                  <div>
-                    <h3>HABIBTI</h3>
-                    <p>11 songs</p>
-                  </div>
-                  <button class="icon-button" type="button" aria-label="Play HABIBTI">
-                    <span aria-hidden="true"></span>
-                  </button>
-                </div>
-              </article>
+<article class="album-card">
+    <div class="cover cover-habibti">
+        <img src="./assets/habibti-cover.png" alt="HABIBTI album artwork" />
+    </div>
+
+    <div class="album-info">
+        <div>
+            <h3>HABIBTI</h3>
+            <p>11 songs</p>
+        </div>
+
+        <button class="icon-button" type="button" aria-label="Play HABIBTI">
+            <span aria-hidden="true"></span>
+        </button>
+    </div>
+</article>
+
 
               <article class="album-card">
                 <div class="cover cover-maid">
@@ -100,7 +103,52 @@
         </div>
       </section>
     </main>
+<section class="spotify-player">
 
+<h2>Listen to Iceman</h2>
+
+<iframe
+data-testid="embed-iframe"
+style="border-radius:12px"
+src="https://open.spotify.com/embed/album/0OAv7DCME2AV4q1KPO95HY?utm_source=generator&theme=0"
+width="100%"
+height="352"
+frameborder="0"
+allowfullscreen
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy">
+</iframe>
+
+<h2>Listen to Habibti</h2>
+
+<iframe
+data-testid="embed-iframe"
+style="border-radius:12px"
+src="https://open.spotify.com/embed/album/0P6B5R3yRSkhkmequL5Yno?utm_source=generator"
+width="100%"
+height="352"
+frameborder="0"
+allowfullscreen
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy">
+</iframe>
+
+<h2>Listen to Maid Of Honour</h2>
+
+<iframe
+data-testid="embed-iframe"
+style="border-radius:12px"
+src="https://open.spotify.com/embed/album/71yBvOeRZ9os9LYFEy9eOk?utm_source=generator"
+width="100%"
+height="352"
+frameborder="0"
+allowfullscreen
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy">
+</iframe>
+
+</section>
     <script type="module" src="./script.js"></script>
   </body>
 </html>
+
